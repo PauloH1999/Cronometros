@@ -1,0 +1,106 @@
+
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+    
+.box{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: #000;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.boxh::after{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#ffffcc );
+    position: absolute;
+    animation: spin linear 2s infinite;
+    animation-delay: -1s;
+}
+.boxh::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#ffffcc );
+    position: absolute;
+    animation: spin linear 2s infinite;
+}
+
+/*----------------------*/
+
+.boxm::after{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#00ccff );
+    position: absolute;
+    animation: spin linear 2s infinite;
+    animation-delay: -1s;
+}
+.boxm::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#00ccff );
+    position: absolute;
+    animation: spin linear 2s infinite;
+}
+
+/*----------------------*/
+
+.boxs::after{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#d400d4 );
+    position: absolute;
+    animation: spin linear 2s infinite;
+    animation-delay: -1s;
+}
+.boxs::before{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent, transparent, transparent,#d400d4 );
+    position: absolute;
+    animation: spin linear 2s infinite;
+}
+
+
+
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+#span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 36px;
+    z-index: 1;
+    background: #000;
+}
+
+h1{
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+}
+
+#container{
+    display: flex;
+}

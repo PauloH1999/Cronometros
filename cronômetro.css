@@ -1,0 +1,51 @@
+
+body{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+#watch{
+    font-family: Sans-Serif;
+}
+
+input{
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+
+#box{
+    text-align: center;
+    border: solid 3px white;
+    padding: 20px;
+    width: 400px;
+}
+
+#watch{
+    margin-top: 0px;
+}
+
+#start{
+    background-color: green;
+    color: white;
+}
+
+#pause{
+    background-color: grey;
+    color: white;
+}
+
+#stop{
+    background-color: red;
+    color: white;
+}
+
+input:hover{
+    cursor: pointer;
+    filter: opacity(60%);
+}
